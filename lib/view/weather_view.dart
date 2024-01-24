@@ -18,11 +18,11 @@ class WeatherView extends ConsumerWidget {
       body: weatherViewModel.when(
         data: (data) {
           return ListView.builder(
-            itemCount: data.hourly!.time!.length,
+            itemCount: data.hourly.time.length,
             itemBuilder: (context, index) {
               return ListTile(
-                title: Text(formatDate(data.hourly!.time![index])),// 日付をフォーマット
-                  subtitle: Text('${data.hourly!.temperature_2m![index]}'),// 気温を表示
+                title: Text(formatDate(data.hourly.time[index])),// 日付をフォーマット
+                  subtitle: Text('${data.hourly.temperature_2m[index]}'),// 気温を表示
               );
             },
           );

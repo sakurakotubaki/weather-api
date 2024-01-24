@@ -20,15 +20,15 @@ Weather _$WeatherFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Weather {
-  double? get latitude => throw _privateConstructorUsedError;
-  double? get longitude => throw _privateConstructorUsedError;
-  double? get generationtime_ms => throw _privateConstructorUsedError;
-  int? get utc_offset_seconds => throw _privateConstructorUsedError;
-  String? get timezone => throw _privateConstructorUsedError;
-  String? get timezone_abbreviation => throw _privateConstructorUsedError;
-  double? get elevation => throw _privateConstructorUsedError; // int -> double
-  HourlyUnits? get hourly_units => throw _privateConstructorUsedError;
-  Hourly? get hourly => throw _privateConstructorUsedError;
+  double get latitude => throw _privateConstructorUsedError;
+  double get longitude => throw _privateConstructorUsedError;
+  double get generationtime_ms => throw _privateConstructorUsedError;
+  int get utc_offset_seconds => throw _privateConstructorUsedError;
+  String get timezone => throw _privateConstructorUsedError;
+  String get timezone_abbreviation => throw _privateConstructorUsedError;
+  double get elevation => throw _privateConstructorUsedError;
+  HourlyUnits get hourly_units => throw _privateConstructorUsedError;
+  Hourly get hourly => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41,18 +41,18 @@ abstract class $WeatherCopyWith<$Res> {
       _$WeatherCopyWithImpl<$Res, Weather>;
   @useResult
   $Res call(
-      {double? latitude,
-      double? longitude,
-      double? generationtime_ms,
-      int? utc_offset_seconds,
-      String? timezone,
-      String? timezone_abbreviation,
-      double? elevation,
-      HourlyUnits? hourly_units,
-      Hourly? hourly});
+      {double latitude,
+      double longitude,
+      double generationtime_ms,
+      int utc_offset_seconds,
+      String timezone,
+      String timezone_abbreviation,
+      double elevation,
+      HourlyUnits hourly_units,
+      Hourly hourly});
 
-  $HourlyUnitsCopyWith<$Res>? get hourly_units;
-  $HourlyCopyWith<$Res>? get hourly;
+  $HourlyUnitsCopyWith<$Res> get hourly_units;
+  $HourlyCopyWith<$Res> get hourly;
 }
 
 /// @nodoc
@@ -68,76 +68,68 @@ class _$WeatherCopyWithImpl<$Res, $Val extends Weather>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? latitude = freezed,
-    Object? longitude = freezed,
-    Object? generationtime_ms = freezed,
-    Object? utc_offset_seconds = freezed,
-    Object? timezone = freezed,
-    Object? timezone_abbreviation = freezed,
-    Object? elevation = freezed,
-    Object? hourly_units = freezed,
-    Object? hourly = freezed,
+    Object? latitude = null,
+    Object? longitude = null,
+    Object? generationtime_ms = null,
+    Object? utc_offset_seconds = null,
+    Object? timezone = null,
+    Object? timezone_abbreviation = null,
+    Object? elevation = null,
+    Object? hourly_units = null,
+    Object? hourly = null,
   }) {
     return _then(_value.copyWith(
-      latitude: freezed == latitude
+      latitude: null == latitude
           ? _value.latitude
           : latitude // ignore: cast_nullable_to_non_nullable
-              as double?,
-      longitude: freezed == longitude
+              as double,
+      longitude: null == longitude
           ? _value.longitude
           : longitude // ignore: cast_nullable_to_non_nullable
-              as double?,
-      generationtime_ms: freezed == generationtime_ms
+              as double,
+      generationtime_ms: null == generationtime_ms
           ? _value.generationtime_ms
           : generationtime_ms // ignore: cast_nullable_to_non_nullable
-              as double?,
-      utc_offset_seconds: freezed == utc_offset_seconds
+              as double,
+      utc_offset_seconds: null == utc_offset_seconds
           ? _value.utc_offset_seconds
           : utc_offset_seconds // ignore: cast_nullable_to_non_nullable
-              as int?,
-      timezone: freezed == timezone
+              as int,
+      timezone: null == timezone
           ? _value.timezone
           : timezone // ignore: cast_nullable_to_non_nullable
-              as String?,
-      timezone_abbreviation: freezed == timezone_abbreviation
+              as String,
+      timezone_abbreviation: null == timezone_abbreviation
           ? _value.timezone_abbreviation
           : timezone_abbreviation // ignore: cast_nullable_to_non_nullable
-              as String?,
-      elevation: freezed == elevation
+              as String,
+      elevation: null == elevation
           ? _value.elevation
           : elevation // ignore: cast_nullable_to_non_nullable
-              as double?,
-      hourly_units: freezed == hourly_units
+              as double,
+      hourly_units: null == hourly_units
           ? _value.hourly_units
           : hourly_units // ignore: cast_nullable_to_non_nullable
-              as HourlyUnits?,
-      hourly: freezed == hourly
+              as HourlyUnits,
+      hourly: null == hourly
           ? _value.hourly
           : hourly // ignore: cast_nullable_to_non_nullable
-              as Hourly?,
+              as Hourly,
     ) as $Val);
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $HourlyUnitsCopyWith<$Res>? get hourly_units {
-    if (_value.hourly_units == null) {
-      return null;
-    }
-
-    return $HourlyUnitsCopyWith<$Res>(_value.hourly_units!, (value) {
+  $HourlyUnitsCopyWith<$Res> get hourly_units {
+    return $HourlyUnitsCopyWith<$Res>(_value.hourly_units, (value) {
       return _then(_value.copyWith(hourly_units: value) as $Val);
     });
   }
 
   @override
   @pragma('vm:prefer-inline')
-  $HourlyCopyWith<$Res>? get hourly {
-    if (_value.hourly == null) {
-      return null;
-    }
-
-    return $HourlyCopyWith<$Res>(_value.hourly!, (value) {
+  $HourlyCopyWith<$Res> get hourly {
+    return $HourlyCopyWith<$Res>(_value.hourly, (value) {
       return _then(_value.copyWith(hourly: value) as $Val);
     });
   }
@@ -151,20 +143,20 @@ abstract class _$$WeatherImplCopyWith<$Res> implements $WeatherCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {double? latitude,
-      double? longitude,
-      double? generationtime_ms,
-      int? utc_offset_seconds,
-      String? timezone,
-      String? timezone_abbreviation,
-      double? elevation,
-      HourlyUnits? hourly_units,
-      Hourly? hourly});
+      {double latitude,
+      double longitude,
+      double generationtime_ms,
+      int utc_offset_seconds,
+      String timezone,
+      String timezone_abbreviation,
+      double elevation,
+      HourlyUnits hourly_units,
+      Hourly hourly});
 
   @override
-  $HourlyUnitsCopyWith<$Res>? get hourly_units;
+  $HourlyUnitsCopyWith<$Res> get hourly_units;
   @override
-  $HourlyCopyWith<$Res>? get hourly;
+  $HourlyCopyWith<$Res> get hourly;
 }
 
 /// @nodoc
@@ -178,53 +170,53 @@ class __$$WeatherImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? latitude = freezed,
-    Object? longitude = freezed,
-    Object? generationtime_ms = freezed,
-    Object? utc_offset_seconds = freezed,
-    Object? timezone = freezed,
-    Object? timezone_abbreviation = freezed,
-    Object? elevation = freezed,
-    Object? hourly_units = freezed,
-    Object? hourly = freezed,
+    Object? latitude = null,
+    Object? longitude = null,
+    Object? generationtime_ms = null,
+    Object? utc_offset_seconds = null,
+    Object? timezone = null,
+    Object? timezone_abbreviation = null,
+    Object? elevation = null,
+    Object? hourly_units = null,
+    Object? hourly = null,
   }) {
     return _then(_$WeatherImpl(
-      latitude: freezed == latitude
+      latitude: null == latitude
           ? _value.latitude
           : latitude // ignore: cast_nullable_to_non_nullable
-              as double?,
-      longitude: freezed == longitude
+              as double,
+      longitude: null == longitude
           ? _value.longitude
           : longitude // ignore: cast_nullable_to_non_nullable
-              as double?,
-      generationtime_ms: freezed == generationtime_ms
+              as double,
+      generationtime_ms: null == generationtime_ms
           ? _value.generationtime_ms
           : generationtime_ms // ignore: cast_nullable_to_non_nullable
-              as double?,
-      utc_offset_seconds: freezed == utc_offset_seconds
+              as double,
+      utc_offset_seconds: null == utc_offset_seconds
           ? _value.utc_offset_seconds
           : utc_offset_seconds // ignore: cast_nullable_to_non_nullable
-              as int?,
-      timezone: freezed == timezone
+              as int,
+      timezone: null == timezone
           ? _value.timezone
           : timezone // ignore: cast_nullable_to_non_nullable
-              as String?,
-      timezone_abbreviation: freezed == timezone_abbreviation
+              as String,
+      timezone_abbreviation: null == timezone_abbreviation
           ? _value.timezone_abbreviation
           : timezone_abbreviation // ignore: cast_nullable_to_non_nullable
-              as String?,
-      elevation: freezed == elevation
+              as String,
+      elevation: null == elevation
           ? _value.elevation
           : elevation // ignore: cast_nullable_to_non_nullable
-              as double?,
-      hourly_units: freezed == hourly_units
+              as double,
+      hourly_units: null == hourly_units
           ? _value.hourly_units
           : hourly_units // ignore: cast_nullable_to_non_nullable
-              as HourlyUnits?,
-      hourly: freezed == hourly
+              as HourlyUnits,
+      hourly: null == hourly
           ? _value.hourly
           : hourly // ignore: cast_nullable_to_non_nullable
-              as Hourly?,
+              as Hourly,
     ));
   }
 }
@@ -233,38 +225,37 @@ class __$$WeatherImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$WeatherImpl with DiagnosticableTreeMixin implements _Weather {
   _$WeatherImpl(
-      {this.latitude,
-      this.longitude,
-      this.generationtime_ms,
-      this.utc_offset_seconds,
-      this.timezone,
-      this.timezone_abbreviation,
-      this.elevation,
-      this.hourly_units,
-      this.hourly});
+      {required this.latitude,
+      required this.longitude,
+      required this.generationtime_ms,
+      required this.utc_offset_seconds,
+      required this.timezone,
+      required this.timezone_abbreviation,
+      required this.elevation,
+      required this.hourly_units,
+      required this.hourly});
 
   factory _$WeatherImpl.fromJson(Map<String, dynamic> json) =>
       _$$WeatherImplFromJson(json);
 
   @override
-  final double? latitude;
+  final double latitude;
   @override
-  final double? longitude;
+  final double longitude;
   @override
-  final double? generationtime_ms;
+  final double generationtime_ms;
   @override
-  final int? utc_offset_seconds;
+  final int utc_offset_seconds;
   @override
-  final String? timezone;
+  final String timezone;
   @override
-  final String? timezone_abbreviation;
+  final String timezone_abbreviation;
   @override
-  final double? elevation;
-// int -> double
+  final double elevation;
   @override
-  final HourlyUnits? hourly_units;
+  final HourlyUnits hourly_units;
   @override
-  final Hourly? hourly;
+  final Hourly hourly;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -341,36 +332,36 @@ class _$WeatherImpl with DiagnosticableTreeMixin implements _Weather {
 
 abstract class _Weather implements Weather {
   factory _Weather(
-      {final double? latitude,
-      final double? longitude,
-      final double? generationtime_ms,
-      final int? utc_offset_seconds,
-      final String? timezone,
-      final String? timezone_abbreviation,
-      final double? elevation,
-      final HourlyUnits? hourly_units,
-      final Hourly? hourly}) = _$WeatherImpl;
+      {required final double latitude,
+      required final double longitude,
+      required final double generationtime_ms,
+      required final int utc_offset_seconds,
+      required final String timezone,
+      required final String timezone_abbreviation,
+      required final double elevation,
+      required final HourlyUnits hourly_units,
+      required final Hourly hourly}) = _$WeatherImpl;
 
   factory _Weather.fromJson(Map<String, dynamic> json) = _$WeatherImpl.fromJson;
 
   @override
-  double? get latitude;
+  double get latitude;
   @override
-  double? get longitude;
+  double get longitude;
   @override
-  double? get generationtime_ms;
+  double get generationtime_ms;
   @override
-  int? get utc_offset_seconds;
+  int get utc_offset_seconds;
   @override
-  String? get timezone;
+  String get timezone;
   @override
-  String? get timezone_abbreviation;
+  String get timezone_abbreviation;
   @override
-  double? get elevation;
-  @override // int -> double
-  HourlyUnits? get hourly_units;
+  double get elevation;
   @override
-  Hourly? get hourly;
+  HourlyUnits get hourly_units;
+  @override
+  Hourly get hourly;
   @override
   @JsonKey(ignore: true)
   _$$WeatherImplCopyWith<_$WeatherImpl> get copyWith =>
@@ -383,9 +374,8 @@ HourlyUnits _$HourlyUnitsFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$HourlyUnits {
-  String? get time =>
-      throw _privateConstructorUsedError; // hourly_units: {"time": []"}
-  String? get temperature_2m => throw _privateConstructorUsedError;
+  String get time => throw _privateConstructorUsedError;
+  String get temperature_2m => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -399,7 +389,7 @@ abstract class $HourlyUnitsCopyWith<$Res> {
           HourlyUnits value, $Res Function(HourlyUnits) then) =
       _$HourlyUnitsCopyWithImpl<$Res, HourlyUnits>;
   @useResult
-  $Res call({String? time, String? temperature_2m});
+  $Res call({String time, String temperature_2m});
 }
 
 /// @nodoc
@@ -415,18 +405,18 @@ class _$HourlyUnitsCopyWithImpl<$Res, $Val extends HourlyUnits>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? time = freezed,
-    Object? temperature_2m = freezed,
+    Object? time = null,
+    Object? temperature_2m = null,
   }) {
     return _then(_value.copyWith(
-      time: freezed == time
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
-              as String?,
-      temperature_2m: freezed == temperature_2m
+              as String,
+      temperature_2m: null == temperature_2m
           ? _value.temperature_2m
           : temperature_2m // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ) as $Val);
   }
 }
@@ -439,7 +429,7 @@ abstract class _$$HourlyUnitsImplCopyWith<$Res>
       __$$HourlyUnitsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? time, String? temperature_2m});
+  $Res call({String time, String temperature_2m});
 }
 
 /// @nodoc
@@ -453,18 +443,18 @@ class __$$HourlyUnitsImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? time = freezed,
-    Object? temperature_2m = freezed,
+    Object? time = null,
+    Object? temperature_2m = null,
   }) {
     return _then(_$HourlyUnitsImpl(
-      time: freezed == time
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
-              as String?,
-      temperature_2m: freezed == temperature_2m
+              as String,
+      temperature_2m: null == temperature_2m
           ? _value.temperature_2m
           : temperature_2m // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
     ));
   }
 }
@@ -472,16 +462,15 @@ class __$$HourlyUnitsImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$HourlyUnitsImpl with DiagnosticableTreeMixin implements _HourlyUnits {
-  _$HourlyUnitsImpl({this.time, this.temperature_2m});
+  _$HourlyUnitsImpl({required this.time, required this.temperature_2m});
 
   factory _$HourlyUnitsImpl.fromJson(Map<String, dynamic> json) =>
       _$$HourlyUnitsImplFromJson(json);
 
   @override
-  final String? time;
-// hourly_units: {"time": []"}
+  final String time;
   @override
-  final String? temperature_2m;
+  final String temperature_2m;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -526,16 +515,17 @@ class _$HourlyUnitsImpl with DiagnosticableTreeMixin implements _HourlyUnits {
 }
 
 abstract class _HourlyUnits implements HourlyUnits {
-  factory _HourlyUnits({final String? time, final String? temperature_2m}) =
-      _$HourlyUnitsImpl;
+  factory _HourlyUnits(
+      {required final String time,
+      required final String temperature_2m}) = _$HourlyUnitsImpl;
 
   factory _HourlyUnits.fromJson(Map<String, dynamic> json) =
       _$HourlyUnitsImpl.fromJson;
 
   @override
-  String? get time;
-  @override // hourly_units: {"time": []"}
-  String? get temperature_2m;
+  String get time;
+  @override
+  String get temperature_2m;
   @override
   @JsonKey(ignore: true)
   _$$HourlyUnitsImplCopyWith<_$HourlyUnitsImpl> get copyWith =>
@@ -548,9 +538,8 @@ Hourly _$HourlyFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Hourly {
-  List<String>? get time =>
-      throw _privateConstructorUsedError; // hourly: {"time": []"}
-  List<double>? get temperature_2m => throw _privateConstructorUsedError;
+  List<String> get time => throw _privateConstructorUsedError;
+  List<double> get temperature_2m => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -562,7 +551,7 @@ abstract class $HourlyCopyWith<$Res> {
   factory $HourlyCopyWith(Hourly value, $Res Function(Hourly) then) =
       _$HourlyCopyWithImpl<$Res, Hourly>;
   @useResult
-  $Res call({List<String>? time, List<double>? temperature_2m});
+  $Res call({List<String> time, List<double> temperature_2m});
 }
 
 /// @nodoc
@@ -578,18 +567,18 @@ class _$HourlyCopyWithImpl<$Res, $Val extends Hourly>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? time = freezed,
-    Object? temperature_2m = freezed,
+    Object? time = null,
+    Object? temperature_2m = null,
   }) {
     return _then(_value.copyWith(
-      time: freezed == time
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
-      temperature_2m: freezed == temperature_2m
+              as List<String>,
+      temperature_2m: null == temperature_2m
           ? _value.temperature_2m
           : temperature_2m // ignore: cast_nullable_to_non_nullable
-              as List<double>?,
+              as List<double>,
     ) as $Val);
   }
 }
@@ -601,7 +590,7 @@ abstract class _$$HourlyImplCopyWith<$Res> implements $HourlyCopyWith<$Res> {
       __$$HourlyImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({List<String>? time, List<double>? temperature_2m});
+  $Res call({List<String> time, List<double> temperature_2m});
 }
 
 /// @nodoc
@@ -615,18 +604,18 @@ class __$$HourlyImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? time = freezed,
-    Object? temperature_2m = freezed,
+    Object? time = null,
+    Object? temperature_2m = null,
   }) {
     return _then(_$HourlyImpl(
-      time: freezed == time
+      time: null == time
           ? _value._time
           : time // ignore: cast_nullable_to_non_nullable
-              as List<String>?,
-      temperature_2m: freezed == temperature_2m
+              as List<String>,
+      temperature_2m: null == temperature_2m
           ? _value._temperature_2m
           : temperature_2m // ignore: cast_nullable_to_non_nullable
-              as List<double>?,
+              as List<double>,
     ));
   }
 }
@@ -634,33 +623,29 @@ class __$$HourlyImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$HourlyImpl with DiagnosticableTreeMixin implements _Hourly {
-  _$HourlyImpl({final List<String>? time, final List<double>? temperature_2m})
+  _$HourlyImpl(
+      {required final List<String> time,
+      required final List<double> temperature_2m})
       : _time = time,
         _temperature_2m = temperature_2m;
 
   factory _$HourlyImpl.fromJson(Map<String, dynamic> json) =>
       _$$HourlyImplFromJson(json);
 
-  final List<String>? _time;
+  final List<String> _time;
   @override
-  List<String>? get time {
-    final value = _time;
-    if (value == null) return null;
+  List<String> get time {
     if (_time is EqualUnmodifiableListView) return _time;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_time);
   }
 
-// hourly: {"time": []"}
-  final List<double>? _temperature_2m;
-// hourly: {"time": []"}
+  final List<double> _temperature_2m;
   @override
-  List<double>? get temperature_2m {
-    final value = _temperature_2m;
-    if (value == null) return null;
+  List<double> get temperature_2m {
     if (_temperature_2m is EqualUnmodifiableListView) return _temperature_2m;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_temperature_2m);
   }
 
   @override
@@ -710,15 +695,15 @@ class _$HourlyImpl with DiagnosticableTreeMixin implements _Hourly {
 
 abstract class _Hourly implements Hourly {
   factory _Hourly(
-      {final List<String>? time,
-      final List<double>? temperature_2m}) = _$HourlyImpl;
+      {required final List<String> time,
+      required final List<double> temperature_2m}) = _$HourlyImpl;
 
   factory _Hourly.fromJson(Map<String, dynamic> json) = _$HourlyImpl.fromJson;
 
   @override
-  List<String>? get time;
-  @override // hourly: {"time": []"}
-  List<double>? get temperature_2m;
+  List<String> get time;
+  @override
+  List<double> get temperature_2m;
   @override
   @JsonKey(ignore: true)
   _$$HourlyImplCopyWith<_$HourlyImpl> get copyWith =>
